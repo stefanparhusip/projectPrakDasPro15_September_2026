@@ -8,21 +8,17 @@ public class PemilihanHariDenganIf27 {
         System.out.print("Input day name: ");
         dayName = sc.nextInt();
 
-        switch (dayName){
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-                dayType = " Weekday";
-                break;
-            case 6:
-            case 7:
-                dayType = " Weekend";
-                break;
-            default:
-                dayType = "invalid number";
+        if (dayName >= 1 && dayName <= 5) {
+                dayType = "Weekday";
         }
+        else if (dayName == 6 || dayName == 7) {
+                dayType = "Weekend";
+        }
+        else {
+                dayType = "invalid day name";
+        }
+        {
             System.out.println(dayName + " is a " + dayType);
         }
     }
+}
