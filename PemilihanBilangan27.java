@@ -7,13 +7,13 @@ public class PemilihanBilangan27 {
         int angka = sc.nextInt();
 
         if (angka % 2 == 0) 
-        {
+        
             System.out.println("Angka" + angka + "termasuk bilangan genap.");
-        } 
+        
             else 
-        {
+        
             System.out.println( "Angka" + angka + "termasuk bilangan ganjil ");
-        }
+        
         sc.close();
     }
 }
